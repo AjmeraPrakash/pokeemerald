@@ -442,7 +442,7 @@ static u8 ChooseMoveOrAction_Singles(void)
             }
         }
     }
-    return consideredMoveArray[Random() % numOfBestMoves];
+    return consideredMoveArray[0];
 }
 
 static u8 ChooseMoveOrAction_Doubles(void)
