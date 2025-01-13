@@ -17,6 +17,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+        with:
+          submodules: 'recursive'
+        env:
+          GITHUB_TOKEN: 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
 
       - name: Checkout syms
         if: ${{ github.event_name == 'push' }}
