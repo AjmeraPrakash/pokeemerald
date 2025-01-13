@@ -22,12 +22,6 @@ jobs:
         env:
           GITHUB_TOKEN: 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
 
-      - name: Checkout syms
-        if: ${{ github.event_name == 'push' }}
-        uses: actions/checkout@master
-        with:
-          path: symbols
-          ref: symbols
 
       - name: Checkout agbcc
         uses: actions/checkout@master
