@@ -55,5 +55,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Built-ROM
-          path: pokeemerald_modern/pokeemerald_modern.gba
+          path: pokeemerald_modern.gba
 
