@@ -1596,7 +1596,7 @@ static void OpponentHandleChooseMove(void)
             u16 move;
             do
             {
-                chosenMoveId = 1; //MOD(Random(), MAX_MON_MOVES)
+                chosenMoveId = 0; //MOD(Random(), MAX_MON_MOVES)
                 move = moveInfo->moves[chosenMoveId];
             } while (move == MOVE_NONE);
 
