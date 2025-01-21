@@ -442,7 +442,7 @@ static u8 ChooseMoveOrAction_Singles(void)
             }
         }
     }
-    return 0;
+    return 1;
 }
 
 static u8 ChooseMoveOrAction_Doubles(void)
