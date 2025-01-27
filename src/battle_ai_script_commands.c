@@ -434,7 +434,7 @@ static u8 ChooseMoveOrAction_Singles(void)
                 currentMoveArray[numOfBestMoves] = AI_THINKING_STRUCT->score[i];
                 consideredMoveArray[numOfBestMoves++] = i;
             }
-            if (currentMoveArray[0] < AI_THINKING_STRUCT->score[i])
+            if (currentMoveArray[0] < AI_THINKING_STRUCT->score[i]) 
             {
                 numOfBestMoves = 1;
                 currentMoveArray[0] = AI_THINKING_STRUCT->score[i];
@@ -442,7 +442,11 @@ static u8 ChooseMoveOrAction_Singles(void)
             }
         }
     }
-    return 0;
+    if (gBattleMons[sBattler_AI].pp[0] != 0){
+        return 0;
+    }
+    else
+        return 1;
 }
 
 static u8 ChooseMoveOrAction_Doubles(void)
